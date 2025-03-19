@@ -3,7 +3,7 @@
 
 
 
-```
+
 ## Description
 Our work is based on the Open-Flamingo project.   
 However, we encountered some bugs when applying the FSDP training framework within Open-Flamingo (the 2023 version).   
