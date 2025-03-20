@@ -31,7 +31,7 @@ from PIL import Image
 #Load CLIP model
 model = SentenceTransformer('clip-ViT-L-14')
 
-
+print(model.device)  # 如果是 'cuda'，说明在用 GPU
 
 #read image names
 image_name_list = []
