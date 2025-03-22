@@ -44,7 +44,7 @@ class Flamingo(VLMWithCrossAttention):
             import numpy as np
             import torch
             self.transform_layer = nn.Linear(2048, 768)
-            image_emb = np.load('/storage_fast/yqli/project/AutoregressiveImageRetrieval/data/Openflamingo_format/coco/image_emb.npy')
+            image_emb = np.load('/home/iiserver31/Workbench/likaipeng/Grace/data/Openflamingo_format/flicker/image_emb.npy')
             self.class_layer = nn.Linear(image_emb.shape[1], image_emb.shape[0], False)
             self.class_layer.weight = nn.Parameter(torch.tensor(image_emb.transpose(0, 1)))
 
