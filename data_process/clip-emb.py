@@ -16,7 +16,8 @@ output_path = "../data/Openflamingo_format/flicker/image_emb.npy"
 
 # 2. 加载 CLIP 模型
 device = "cuda" if torch.cuda.is_available() else "cpu"
-model, preprocess = clip.load("ViT-B/32", device=device)
+# 使用 clip-ViT-L-14 模型
+model, preprocess = clip.load("ViT-L/14", device=device)
 print(f"Using device: {device}")
 
 # 3. 获取图像文件列表
